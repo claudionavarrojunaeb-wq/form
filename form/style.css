@@ -1,0 +1,16 @@
+:root{--primary:#007bff;--bg:#f7f9fb;--card:#fff}
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:var(--bg);margin:0;padding:24px}
+.container{max-width:720px;margin:24px auto;background:var(--card);padding:20px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+h1{margin:0 0 12px;font-size:20px}
+.progress{height:8px;background:#e6eef8;border-radius:8px;overflow:hidden;margin-bottom:20px}
+.progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--primary),#0056b3)}
+.step{display:none}
+.step.active{display:block}
+label{display:block;margin:10px 0}
+input[type=text],input[type=email],input[type=number],textarea{width:100%;padding:8px;border:1px solid #d7dae0;border-radius:6px}
+.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+.btn{background:var(--primary);color:#fff;padding:8px 14px;border-radius:999px;border:none;cursor:pointer;font-weight:600}
+.btn.secondary{background:#e9eef9;color:#0b5486}
+.btn:disabled{opacity:0.6;cursor:not-allowed}
+#summaryContent{background:#f3f6fb;padding:12px;border-radius:6px;border:1px solid #e3ecff}

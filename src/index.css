@@ -1,0 +1,35 @@
+:root{--primary:#007bff}
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+.app{max-width:800px;margin:28px auto;padding:20px}
+.header h1{margin:0 0 16px}
+.msf-card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.msf-stepper{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	width:100%;
+	max-width:360px;
+	margin:0 auto 12px;
+	padding:0 8px;
+}
+.msf-step{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background:#e9eef9;
+	color:#0b5486;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-weight:600;
+    cursor: pointer;
+    transition: transform .08s ease, box-shadow .08s ease;
+}
+.msf-step:focus{outline:2px solid rgba(0,123,255,0.25);box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.msf-step:hover{transform:translateY(-3px)}
+.msf-step.active{background:var(--primary);color:#fff}
+label{display:block;margin:8px 0}
+input,textarea{width:100%;padding:8px;border:1px solid #d7dae0;border-radius:6px}
+input[type="checkbox"]{width:auto;padding:0;margin:0;display:inline-block;vertical-align:middle}
+.btn{background:var(--primary);color:#fff;padding:8px 12px;border-radius:999px;border:none;cursor:pointer}
+.btn.secondary{background:#e9eef9;color:#0b5486}

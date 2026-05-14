@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Formulario Multipaso - 00_form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Formulario Multipaso (3 pasos)</h1>
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <form id="multiStepForm">
+      <!-- Step 1 -->
+      <section class="step" data-step="1">
+        <h2>Paso 1 — Datos personales</h2>
+        <label>Nombre
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label>Correo
+          <input type="email" name="email" id="email" required>
+        </label>
+        <div class="actions">
+          <button type="button" class="btn" id="next1">Siguiente</button>
+        </div>
+      </section>
+
+      <!-- Step 2 -->
+      <section class="step" data-step="2">
+        <h2>Paso 2 — Información</h2>
+        <label>Edad
+          <input type="number" name="age" id="age" min="0">
+        </label>
+        <label>País
+          <input type="text" name="country" id="country">
+        </label>
+        <div class="actions">
+          <button type="button" class="btn secondary" id="prev2">Anterior</button>
+          <button type="button" class="btn" id="next2">Siguiente</button>
+        </div>
+      </section>
+
+      <!-- Step 3 -->
+      <section class="step" data-step="3">
+        <h2>Paso 3 — Confirmación</h2>
+        <label>Acepto los términos
+          <input type="checkbox" name="agree" id="agree">
+        </label>
+        <label>Comentarios
+          <textarea name="comments" id="comments" rows="4"></textarea>
+        </label>
+        <div class="actions">
+          <button type="button" class="btn secondary" id="prev3">Anterior</button>
+          <button type="submit" class="btn" id="submitBtn">Enviar</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="4" id="summary" hidden>
+        <h2>Resumen</h2>
+        <div id="summaryContent"></div>
+        <div class="actions">
+          <button type="button" class="btn" id="startOver">Comenzar de nuevo</button>
+        </div>
+      </section>
+
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
